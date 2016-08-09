@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'jekyll'
+gem 'jemoji'
+gem 'kramdown'
+gem 'pygments.rb'

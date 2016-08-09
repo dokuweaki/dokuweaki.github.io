@@ -1,0 +1,16 @@
+# Setup
+title:        DokuWeaki
+tagline:      A (Doku)Wiki for Agile Software Development
+baseurl:      ""
+
+# About/contact
+author:
+  name:       Henrique Ferrolho
+  url:        http://ferrolho.github.io/
+
+# Gems
+gems:
+  - jemoji
+
+#Others
+markdown: kramdown

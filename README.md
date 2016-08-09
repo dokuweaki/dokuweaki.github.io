@@ -1,2 +1,3 @@
-# dokuweaki.github.io
+# DokuWeaki
+
 DokuWeaki's home
