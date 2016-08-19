@@ -1,8 +1,8 @@
 # Table of contents
 
 - [About](#about)
-- [Install](#install)
 - [Usage](#usage)
+- [Install](#install)
 
 
 # About
@@ -18,6 +18,11 @@ DokuWeaki is a bundle of plugins for DokuWiki especially targeted for agile team
 - Templating
 
 
+# Usage
+
+*To do*
+
+
 # Install
 
 To install the DokuWeaki Bundle:
@@ -28,8 +33,3 @@ To install the DokuWeaki Bundle:
 - Select the **Manual Install** tab
 - Upload the bundle .zip
 - Click the **Install** button
-
-
-# Usage
-
-*To do*

@@ -9,7 +9,7 @@ author:
   url:        http://ferrolho.github.io/
 
 # DokuWeaki
-bundle-download-link: https://github.com/softeng-feup/dokuweaki/raw/development/dokuweaki-bundle.zip
+bundle-download-link: https://raw.githubusercontent.com/dokuweaki/dokuweaki.github.io/assets/dokuweaki.zip
 
 # Gems
 gems:
