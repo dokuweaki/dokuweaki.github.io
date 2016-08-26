@@ -66,6 +66,10 @@ Following is an example of how to use the Comments plugin. One can either use th
 
 ### Templating
 
+<video controls src="{{ site.baseurl }}/assets/usage-templating.mp4" width="100%">
+	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-templating.mp4">download it</a> and watch it with your favorite video player!
+</video>
+
 ---
 
 # Install
