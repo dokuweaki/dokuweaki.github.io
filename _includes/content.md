@@ -52,19 +52,53 @@ Following is an example of how to use the Comments plugin. One can either use th
 
 ### GitHub Content Assist
 
+To enable the content assist on a certain page click the button in the editor, fill in the dialog with the repository details you want to use. Press <kbd>CTRL</kbd> + <kbd>Space</kbd> while writing to use the plugin autocomplete feature.
+
 <video controls src="{{ site.baseurl }}/assets/usage-content-assist.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-content-assist.mp4">download it</a> and watch it with your favorite video player!
 </video>
 
 ### GitHub Integration
 
+To integrate a Wiki with a GitHub repository, one needs to create a [GitHub token](https://github.com/settings/tokens) with ***repo* and *user* scopes**.
+
+After the token is created, its details must be added to the DokuWiki settings in:
+
+> **Admin > Configuration Settings > WeakiGithubIntegration section**
+
+![WeakiGithubIntegration settings]({{ site.baseurl }}/assets/install-github-integration.png)
+
+<p style="margin-top: -15px; text-align: right;"><sup><sub>* The token in the picture is not available.</sub></sup></p>
+
+Below is a demo of a working configuration.
+
+<video controls src="{{ site.baseurl }}/assets/usage-github-integration.mp4" width="100%">
+	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-github-integration.mp4">download it</a> and watch it with your favorite video player!
+</video>
+
 ### JavaScript Code Transclusion
+
+To embed code in a page from a file available at GitHub, just use one of the following tags:
+
+```
+<js-code src="{ link to GitHub file }">
+
+<js-code src="{ link to GitHub file }@{ method name }">
+```
 
 <video controls src="{{ site.baseurl }}/assets/usage-js-code-transclusion.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-js-code-transclusion.mp4">download it</a> and watch it with your favorite video player!
 </video>
 
 ### Templating
+
+To create a page using a *template*, start editing the page. Edit the **url** by appending an extension to the page name. The extension must be exactly like the name of an existing template.
+
+For example, if you want to create a page with a FAQ template:
+
+`https://.../doku.php?id=start&do=edit`
+
+`https://.../doku.php?id=start.faq&do=edit` - *notice the '**.faq**'*
 
 <video controls src="{{ site.baseurl }}/assets/usage-templating.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-templating.mp4">download it</a> and watch it with your favorite video player!
