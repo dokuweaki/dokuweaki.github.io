@@ -42,7 +42,7 @@ It is also possible to add new starting templates for future use.
 
 # Usage
 
-- ### Comments
+### Comments
 
 Following is an example of how to use the Comments plugin. One can either use the comment interface buttons on the Wiki page, or can add/edit/delete comments manually through the page editor.
 
@@ -50,13 +50,21 @@ Following is an example of how to use the Comments plugin. One can either use th
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-comments.mp4">download it</a> and watch it with your favorite video player!
 </video>
 
-- ### GitHub Content Assist
+### GitHub Content Assist
 
-- ### GitHub Integration
+<video controls src="{{ site.baseurl }}/assets/usage-content-assist.mp4" width="100%">
+	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-content-assist.mp4">download it</a> and watch it with your favorite video player!
+</video>
 
-- ### JavaScript Code Transclusion
+### GitHub Integration
 
-- ### Templating
+### JavaScript Code Transclusion
+
+<video controls src="{{ site.baseurl }}/assets/usage-js-code-transclusion.mp4" width="100%">
+	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-js-code-transclusion.mp4">download it</a> and watch it with your favorite video player!
+</video>
+
+### Templating
 
 ---
 
