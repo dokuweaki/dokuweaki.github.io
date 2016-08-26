@@ -30,7 +30,7 @@ This plugin allows users to include a code snippet from GitHub in a DokuWiki pag
 
 The snippet can either be an *entire file*, or a *single function* from that file.
 
-###### * The inclusion of a complete file works for most programming languages. However, in order to include a single function the file must be a JavaScript file.
+<p style="text-align: right;"><sup><sub>* The inclusion of a complete file works for most programming languages. However, in order to include a single function the file must be a JavaScript file.</sub></sup></p>
 
 - ### Templating
 
