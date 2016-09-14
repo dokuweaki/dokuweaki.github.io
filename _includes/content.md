@@ -62,7 +62,7 @@ Lastly, set the domain/ip where the ShareJS server is running.
 
 Afterwards, *multiple users* using different devices, should be able to edit *any* DokuWiki page at the same time.
 
-<p style="margin-top: -15px; text-align: right;"><sup><sub>* For this to work, the ShareJS synchronization server must be running. See the <a href="#how-to-run-the-sharejs-server-for-synchronization">Install</a> notes below.</sub></sup></p>
+<p style="margin-top: -15px; text-align: right;"><sup><sub>* For this to work, the ShareJS synchronization server must be running. See the <a href="#how-to-run-the-sharejs-synchronization-server">Install</a> notes below.</sub></sup></p>
 
 ### Comments
 
