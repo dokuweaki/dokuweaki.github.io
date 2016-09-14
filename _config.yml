@@ -10,6 +10,7 @@ author:
 
 # DokuWeaki
 bundle-download-link: https://github.com/dokuweaki/dokuweaki.github.io/blob/master/assets/dokuweaki.zip?raw=true
+sharejs-server-download-link: https://github.com/dokuweaki/dokuweaki.github.io/blob/master/assets/serverWeakiCollaboration.zip?raw=true
 
 # Gems
 gems:

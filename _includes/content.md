@@ -12,6 +12,10 @@ DokuWeaki is a bundle of plugins for DokuWiki especially targeted for agile team
 
 ## Bundled plugins
 
+- ### Collaboration
+
+Collaboratively edit pages, with real-time synchronization of contents in all Weaki clients.
+
 - ### Comments
 
 Enables users to add inline comments in page contents.
@@ -42,6 +46,24 @@ It is also possible to add new starting templates for future use.
 
 # Usage
 
+### Collaboration
+
+Firstly, the DokuWiki Editor *lock system* must be **disabled** by setting the *locktime* value to *0* (zero).
+
+> **Admin > Configuration Settings > Edit** section
+
+![WeakiGithubIntegration settings]({{ site.baseurl }}/assets/install-collaboration-1.png)
+
+Lastly, set the domain/ip where the ShareJS server is running.
+
+> **Admin > Configuration Settings > WeakiCollaboration** section
+
+![WeakiGithubIntegration settings]({{ site.baseurl }}/assets/install-collaboration-2.png)
+
+Afterwards, *multiple users* using different devices, should be able to edit *any* DokuWiki page at the same time.
+
+<p style="margin-top: -15px; text-align: right;"><sup><sub>* For this to work, the ShareJS synchronization server must be running. See the <a href="#how-to-run-the-sharejs-server-for-synchronization">Install</a> notes below.</sub></sup></p>
+
 ### Comments
 
 Following is an example of how to use the Comments plugin. One can either use the comment interface buttons on the Wiki page, or can add/edit/delete comments manually through the page editor.
@@ -52,7 +74,7 @@ Following is an example of how to use the Comments plugin. One can either use th
 
 ### GitHub Content Assist
 
-To enable the content assist on a certain page click the button in the editor, fill in the dialog with the repository details you want to use. Press <kbd>CTRL</kbd> + <kbd>Space</kbd> while writing to use the plugin autocomplete feature.
+To enable the content assist on a certain page click the button in the editor, fill in the dialog with the repository details you want to use. Press <kbd>Ctrl</kbd> + <kbd>Space</kbd> while writing to use the plugin autocomplete feature.
 
 <video controls src="{{ site.baseurl }}/assets/usage-content-assist.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-content-assist.mp4">download it</a> and watch it with your favorite video player!
@@ -64,7 +86,7 @@ To integrate a Wiki with a GitHub repository, one needs to create a [GitHub toke
 
 After the token is created, its details must be added to the DokuWiki settings in:
 
-> **Admin > Configuration Settings > WeakiGithubIntegration section**
+> **Admin > Configuration Settings > WeakiGithubIntegration** section
 
 ![WeakiGithubIntegration settings]({{ site.baseurl }}/assets/install-github-integration.png)
 
@@ -122,3 +144,18 @@ Install it and select it in the **Configuration Settings** page.
 - Select the **Manual Install** tab
 - Upload the bundle .zip
 - Click the **Install** button
+
+## How to run the ShareJS synchronization server
+
+This is **required** for the *Collaboration Plugin*.
+
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) both installed.
+
+- [Download]({{ site.sharejs-server-download-link }}) the server .zip file
+- Extract the .zip
+- Open a Terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>)
+- Browse to the extracted folder
+- Install the server dependencies
+	- `npm install`
+- Run the server
+	- `node server`
