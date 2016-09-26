@@ -72,6 +72,7 @@ It is also possible to add new starting templates for future use.
 </div>
 
 
+
 ---
 
 # Install
@@ -95,7 +96,7 @@ Install it and select it in the **Configuration Settings** page.
 
 This is **required** for the *Collaboration Plugin*.
 
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) both installed.
+Make sure you have [Node.js](https://nodejs.org/), [npm](https://www.npmjs.com/), and [Redis](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis) both installed.
 
 - [Download]({{ site.sharejs-server-download-link }}) the server .zip file
 - Extract the .zip
@@ -105,6 +106,10 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 	- `npm install`
 - Run the server
 	- `node server`
+
+*Don't forget to read the [plugin usage](#collaboration-1) to configure the DokuWiki-side remaining settings.*
+
+
 
 ---
 
@@ -128,6 +133,7 @@ Afterwards, *multiple users* using different devices, should be able to edit *an
 
 <p style="margin-top: -15px; text-align: right;"><sup><sub>* For this to work, the ShareJS synchronization server must be running. See the <a href="#how-to-run-the-sharejs-synchronization-server">Install</a> notes below.</sub></sup></p>
 
+
 ### Comments
 
 Following is an example of how to use the Comments plugin. One can either use the comment interface buttons on the Wiki page, or can add/edit/delete comments manually through the page editor.
@@ -136,6 +142,7 @@ Following is an example of how to use the Comments plugin. One can either use th
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-comments.mp4">download it</a> and watch it with your favorite video player!
 </video>
 
+
 ### GitHub Content Assist
 
 To enable the content assist on a certain page click the button in the editor, fill in the dialog with the repository details you want to use. Press <kbd>Ctrl</kbd> + <kbd>Space</kbd> while writing to use the plugin autocomplete feature.
@@ -143,6 +150,7 @@ To enable the content assist on a certain page click the button in the editor, f
 <video controls src="{{ site.baseurl }}/assets/usage-content-assist.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-content-assist.mp4">download it</a> and watch it with your favorite video player!
 </video>
+
 
 ### GitHub Integration
 
@@ -162,6 +170,13 @@ Below is a demo of a working configuration.
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-github-integration.mp4">download it</a> and watch it with your favorite video player!
 </video>
 
+#### Tip: Supporting multiple repositories for sub-DokuWikis
+
+The integration of multiple GitHub repositories is supported as long as the [Farmer Plugin](https://www.dokuwiki.org/plugin:farmer) is installed.
+
+The administrator can create multiple *animals*, each having its own configuration settings. Thus, having different GitHub tokens assigned.
+
+
 ### JavaScript Code Transclusion
 
 To embed code in a page from a file available at GitHub, just use one of the following tags:
@@ -175,6 +190,7 @@ To embed code in a page from a file available at GitHub, just use one of the fol
 <video controls src="{{ site.baseurl }}/assets/usage-js-code-transclusion.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-js-code-transclusion.mp4">download it</a> and watch it with your favorite video player!
 </video>
+
 
 ### Templating
 
