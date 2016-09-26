@@ -1,8 +1,8 @@
 # Table of contents
 
 - [About](#about)
-- [Usage](#usage)
 - [Install](#install)
+- [Usage](#usage)
 
 ---
 
@@ -16,17 +16,37 @@ DokuWeaki is a bundle of plugins for DokuWiki especially targeted for agile team
 
 Collaboratively edit pages, with real-time synchronization of contents in all Weaki clients.
 
+<div style="text-align: right">
+	<h6>Developer: Henrique Ferrolho</h6>
+</div>
+
+
 - ### Comments
 
 Enables users to add inline comments in page contents.
+
+<div style="text-align: right">
+	<h6>Developers: Anaís Dias, Gabriel Souto, João Bordalo, Pedro Castro</h6>
+</div>
+
 
 - ### GitHub Content Assist
 
 This plugin lets users specify a GitHub *repository*, or a DokuWiki *page*. The contents of this repository or page will then be used to feed an autocomplete feature. While the user is typing, the suggestions mechanism of the feature will try to autocomplete the word.
 
+<div style="text-align: right">
+	<h6>Developers: José Cardoso, José Oliveira, Leonardo Faria, Vítor Teixeira</h6>
+</div>
+
+
 - ### GitHub Integration
 
 This plugin allows to automatically *push*, *pull* and *delete* files from GitHub when editing DokuWiki pages.
+
+<div style="text-align: right">
+	<h6>Developers: José Melo, Ricardo Loureiro, Rui Gomes, Tiago Ferreira</h6>
+</div>
+
 
 - ### JavaScript Code Transclusion
 
@@ -34,13 +54,57 @@ This plugin allows users to include a code snippet from GitHub in a DokuWiki pag
 
 The snippet can either be an *entire file*, or a *single function* from that file.
 
+<div style="text-align: right">
+	<h6>Developers: André Pires, Henrique Ferrolho, João Pereira, João Bandeira</h6>
+</div>
+
 <p style="text-align: right;"><sup><sub>* The inclusion of a complete file works for most programming languages. However, in order to include a single function the file must be a JavaScript file.</sub></sup></p>
+
 
 - ### Templating
 
 This plugin enables users to create a new DokuWiki page with one of multiple skeleton templates. There is no need to create more pages from scratch.
 
 It is also possible to add new starting templates for future use.
+
+<div style="text-align: right">
+	<h6>Developers: Diogo Gomes, Eduardo Almeida, Joana Beleza, João Morgado</h6>
+</div>
+
+
+---
+
+# Install
+
+## Use the right template
+
+The DokuWeaki Plugins have been developed with the [Writr](https://www.dokuwiki.org/template:writr) template in mind.
+
+Install it and select it in the **Configuration Settings** page.
+
+## How to install the bundle
+
+- [Download]({{ site.bundle-download-link }}) the bundle .zip file
+- Login as **Administrator**
+- Browse to the **Extension Manager**
+- Select the **Manual Install** tab
+- Upload the bundle .zip
+- Click the **Install** button
+
+## How to run the ShareJS synchronization server
+
+This is **required** for the *Collaboration Plugin*.
+
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) both installed.
+
+- [Download]({{ site.sharejs-server-download-link }}) the server .zip file
+- Extract the .zip
+- Open a Terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>)
+- Browse to the extracted folder
+- Install the server dependencies
+	- `npm install`
+- Run the server
+	- `node server`
 
 ---
 
@@ -125,37 +189,3 @@ For example, if you want to create a page with a FAQ template:
 <video controls src="{{ site.baseurl }}/assets/usage-templating.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ site.baseurl }}/assets/usage-templating.mp4">download it</a> and watch it with your favorite video player!
 </video>
-
----
-
-# Install
-
-## Use the right template
-
-The DokuWeaki Plugins have been developed with the [Writr](https://www.dokuwiki.org/template:writr) template in mind.
-
-Install it and select it in the **Configuration Settings** page.
-
-## How to install the bundle
-
-- [Download]({{ site.bundle-download-link }}) the bundle .zip file
-- Login as **Administrator**
-- Browse to the **Extension Manager**
-- Select the **Manual Install** tab
-- Upload the bundle .zip
-- Click the **Install** button
-
-## How to run the ShareJS synchronization server
-
-This is **required** for the *Collaboration Plugin*.
-
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) both installed.
-
-- [Download]({{ site.sharejs-server-download-link }}) the server .zip file
-- Extract the .zip
-- Open a Terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>)
-- Browse to the extracted folder
-- Install the server dependencies
-	- `npm install`
-- Run the server
-	- `node server`
